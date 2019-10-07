@@ -38,7 +38,13 @@ body {
 #nav li {
     margin: 0;
     padding: 0;
-	  border-bottom: 1px solid #ccc;
+		display:block;
+    color: #ffffff;
+    background-color: #ffc0cb;
+    font-weight: bold;
+    text-align:center;
+    padding: 4px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #nav a:link, #nav a:visited {
@@ -56,6 +62,31 @@ body {
     background-color: #ffdae0;
     color: #4c4c4c;
 }
+
+.navigation {
+	background-color: #ffc0cb;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-flow: column wrap;
+	justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+	.navigation {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 800px) {
+
+	.navigation {
+		margin-right: auto;
+	}
+}
+
+
 
 .caption {
     color: black;
