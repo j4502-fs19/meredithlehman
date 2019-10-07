@@ -74,12 +74,6 @@ body {
 	.navigation {
 		flex-direction: row;
 		justify-content: center;
-	}
-}
-
-@media (min-width: 800px) {
-
-	.navigation {
 		margin-right: auto;
 	}
 }
