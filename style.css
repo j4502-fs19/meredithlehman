@@ -13,6 +13,7 @@ p {
 h1 {
 		font-family: 'Raleway', sans-serif;
 		text-align: center;
+		font-size: 40px;
 }
 
 h2 {
@@ -29,6 +30,30 @@ body {
     width: 95%;
     margin: 0 auto;
 }
+
+
+.caption {
+    color: black;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 0;
+    text-align: right;
+}
+
+#footer {
+    color: #4c4c4c;
+    font-family: 'Playfair Display', serif;
+		text-align: center;
+}
+
+img {
+	border: none;
+}
+
+
+/* NAVIGATION */
+
 
 #nav {
     padding: 0;
@@ -63,38 +88,130 @@ body {
     color: #4c4c4c;
 }
 
+
 .navigation {
 	background-color: #ffc0cb;
 	display: flex;
 	flex-direction: column;
-
 }
 
-@media (min-width: 600px) {
-	.navigation {
-		flex-direction: row;
+@media screen and (min-width: 450px){
+	.navigation{
+		flex-flow: row;
 		justify-content: center;
-		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.navigation{
+		flex-flow: column;
+		justify-content: center;
 	}
 }
 
 
+/* GRID */
 
-.caption {
-    color: black;
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-size: 0.8em;
-    margin-top: 0;
-    text-align: right;
+.clippings{
+	grid-area: a;
+	background-image: url('images/cardsbackground.jpg');
+	background-size: 200px;
+	width:200px;
+height: 200px;
 }
 
-#footer {
-    color: #4c4c4c;
-    font-family: 'Playfair Display', serif;
-		text-align: center;
+.portfolio{
+	grid-area: b;
+	background-image: url('images/cardsbackground.jpg');
+	background-size: 200px;
+	width:200px;
+	height: 200px;
 }
 
-img {
-	border: none;
+.inspiration{
+	grid-area: c;
+	background-image: url('images/cardsbackground.jpg');
+	background-size: 200px;
+	width:200px;
+	height: 200px;
+}
+
+.name{
+	grid-area: d;
+}
+
+.email{
+	grid-area: e;
+}
+
+.link{
+	grid-area: f;
+}
+
+.title{
+	grid-area: g;
+}
+
+.cards ul{
+	display:flex;
+	flex-flow:row;
+	justify-content: center;
+}
+
+.boxlinks li{
+	margin: 10px;
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	text-align:center;
+	font-size: 25px;
+	padding: 4px;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+.boxlinks a:link, .boxlinks a:visited {
+    color: #ffffff;
+    font-weight: bold;
+    text-align:center;
+    text-decoration: none;
+    padding: 4px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width:1000px){
+  .joke{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:20px;
+    grid-template-areas:
+    "a e"
+		"b e"
+		"c e"
+		"d e"
+  }
+}
+
+.question{
+	grid-area: a;
+}
+
+.opener{
+	grid-area: b;
+}
+
+.closer{
+	grid-area: c;
+}
+
+.page{
+	grid-area: d;
+}
+
+.image{
+	grid-area: e;
 }
