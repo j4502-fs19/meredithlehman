@@ -354,3 +354,24 @@ header {
   background-color: #ffcce6;
   color: white;
 }
+
+.about img{
+  width: 500px;
+  float: right;
+padding-right: 100px;
+padding-left: 100px;
+padding-top: 30px;
+}
+
+.about p{
+  padding-left: 100px;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.about h2{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 45px;
+  padding-left: 100px;
+  padding-top: 30px;
+}
